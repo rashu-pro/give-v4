@@ -1,0 +1,124 @@
+body, html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.header {
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+
+.logo-holder img {
+  max-height: 5rem;
+}
+
+.form-wrapper .select2-selection__rendered {
+  line-height: 4rem;
+}
+.form-wrapper .select2-container .select2-selection--single {
+  height: 4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: inset 0 0.08em 0.4em rgba(0, 0, 0, 0.15);
+  border-color: #e1e1e1;
+}
+.form-wrapper .select2-selection__arrow {
+  height: 4rem;
+}
+.form-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 4rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+.form-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 4rem;
+  width: 3.5rem;
+}
+.form-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-width: 7px 6px 0 6px;
+}
+.form-control {
+  box-shadow: inset 0 0.08em 0.4em rgba(0, 0, 0, 0.15);
+  border-color: #e1e1e1;
+  height: 4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.select2-results__option {
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+  font-weight: 500;
+}
+
+.box-amount {
+  padding: 0.7rem 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+  color: #009688;
+  border: 1px solid #c5d9d7;
+  border-radius: 0.6rem;
+}
+.box-amount:hover {
+  background-color: #d5fcf7;
+  color: #009688;
+}
+.box-amount.active {
+  background-color: #009688;
+  color: #fff;
+}
+.box-amount.active:hover {
+  background-color: #009688;
+  color: #fff;
+}
+.box-amount .icon-currency {
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  top: -8px;
+  padding-right: 4px;
+}
+
+.amount-field {
+  position: relative;
+}
+.amount-field .form-control {
+  padding-left: 2.6rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.amount-field .icon-currency {
+  position: absolute;
+  left: 1.4rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999999;
+}
+
+.recurring-donation-checker {
+  display: flex;
+  align-items: center;
+}
+.recurring-donation-checker input[type=checkbox] {
+  width: 1.4rem;
+  height: 1.4rem;
+  box-shadow: inset 0 0.08em 0.4em rgba(0, 0, 0, 0.15);
+  border-color: #ddd;
+}
+.recurring-donation-checker label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

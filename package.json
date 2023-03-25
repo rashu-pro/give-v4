@@ -1,0 +1,32 @@
+{
+  "name": "give-v4-template",
+  "version": "1.0.0",
+  "description": "payment page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass assets/sass:assets/css -w"
+  },
+  "dependencies": {
+    "jquery": "^3.6.4",
+    "bootstrap": "^5.2.3",
+    "select2": "^4.1.0-rc.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rashu-pro/give-v4.git"
+  },
+  "keywords": [
+    "payment",
+    "page",
+    "give",
+    "page",
+    "donation",
+    "template"
+  ],
+  "author": "rashu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rashu-pro/give-v4/issues"
+  },
+  "homepage": "https://github.com/rashu-pro/give-v4#readme"
+}
