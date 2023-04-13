@@ -1,0 +1,52 @@
+.select2-selection__rendered {
+  line-height: $form-field-height;
+}
+.select2-container .select2-selection--single {
+  height: $form-field-height;
+  font-size: $font-size-input;
+  font-weight: 500;
+  box-shadow: $box-shadow-input;
+  border-color: $border-color-input;
+}
+.select2-selection__arrow {
+  height: $form-field-height;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+  line-height: $form-field-height;
+  padding-left:1rem;
+  padding-right: 2rem;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+  height: $form-field-height;
+  width:3.5rem;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+  border-width:7px 6px 0 6px;
+}
+
+.form{
+  &-group{
+    &.form-group-lg{
+      .select2-selection__rendered {
+        line-height: $form-field-height-lg;
+      }
+      .select2-container .select2-selection--single {
+        height: $form-field-height-lg;
+        font-size: $font-size-input;
+      }
+      .select2-selection__arrow {
+        height: $form-field-height-lg;
+      }
+      .select2-container--default .select2-selection--single .select2-selection__rendered{
+        line-height: $form-field-height-lg;
+        padding-left:1rem;
+        padding-right: 2rem;
+      }
+      .select2-container--default .select2-selection--single .select2-selection__arrow{
+        height: $form-field-height-lg;
+        width:3.5rem;
+      }
+    }
+  }
+}

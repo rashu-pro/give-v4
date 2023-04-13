@@ -1,3 +1,32 @@
-.bg-grey{
-  background-color: $color-grey;
+.bg{
+  &-grey{
+    background-color: $color-grey;
+  }
+  &-dark{
+    &-custom{
+      background-color: $color-dark-custom;
+    }
+  }
+}
+
+.text{
+  &-success{
+    &-custom{
+      color:$color-success;
+    }
+  }
+}
+
+.ls{
+  &-1{
+    letter-spacing: 1px;
+  }
+}
+
+.mb{
+  &-4{
+    @media (min-width: 768px) {
+      margin-bottom:2rem!important;
+    }
+  }
 }

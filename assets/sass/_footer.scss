@@ -1,0 +1,32 @@
+.footer{
+  //height:80px;
+  //background-color: #190d23;
+  background-color: #161111;
+  &-top{
+    background-color: #d3d3d3;
+    padding: 12px 0;
+    font-size: 15px;
+    font-weight: 500;
+    *{
+      //opacity: 0.9;
+    }
+    @media (min-width: 768px){
+      font-size: 18px;
+      padding:30px 0;
+      font-weight: 600;
+    }
+  }
+  &-bottom{
+    padding:15px 0;
+    color:#fff;
+    a{
+      &.text-link{
+        color:#fff;
+        text-decoration: none;
+        &:hover{
+          color:#828dda;
+        }
+      }
+    }
+  }
+}

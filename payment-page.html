@@ -49,143 +49,507 @@
     </div>
   </header>
 
-  <div class="main-wrapper py-4 py-md-5">
+  <div class="main-wrapper py-4 py-md-5"
+       style="min-height: 100vh">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-7">
-          <div class="form-wrapper bg-white px-3 px-md-5 py-3 py-md-4">
+          <div class="form-wrapper bg-white">
             <div class="form-wrapper-body">
-              <div class="form-group mb-4">
-                <h2 class="fs-3 fw-bold">Donate to:</h2>
-                <label class="d-none" for="dropdown-1"></label>
-                <select class="form-select form-control form-select-lg select-2"
-                        id="dropdown-1">
-                  <option value="">Select an Option</option>
-                  <option value="construction-fund">Construction Fund</option>
-                  <option value="General-fund">General Fund</option>
-                  <option value="donation">Donation</option>
-                </select>
-              </div>
+              <div class="step-wrapper pb-3">
 
-              <div class="form-group mb-4">
-                <h2 class="fs-3 fw-bold">Donation Amount:</h2>
-
-                <div class="row">
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <div class="box-amount active" data-amount="20">
-                      <span class="icon-currency">$</span>20
+                <!-- CHOOSE AMOUNT - STEP 1 -->
+                <div class="step-box step-1 active"
+                     data-step="1">
+                  <!-- STEP HEAD -->
+                  <div class="step-head bg-dark-custom px-3 px-md-5 py-3 py-md-3">
+                    <div class="row">
+                      <div class="col-9">
+                        <h2 class="fs-3 fw-bold text-white text-uppercase m-0">Choose Amount</h2>
+                      </div>
+                      <div class="col-3"></div>
                     </div>
                   </div>
 
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <div class="box-amount" data-amount="25">
-                      <span class="icon-currency">$</span>25
+                  <!-- STEP BODY -->
+                  <div class="step-body px-3 px-md-5 py-2 py-md-4">
+                    <div class="form-group form-group-lg mb-4">
+                      <h2 class="fs-3 fw-bold">Donate to <span class="text-danger">*</span> </h2>
+                      <label class="d-none" for="dropdown-1"></label>
+                      <select class="form-select form-control form-select-lg select-2"
+                              id="dropdown-1">
+                        <option value="">Select an Option</option>
+                        <option value="construction-fund">Construction Fund</option>
+                        <option value="General-fund">General Fund</option>
+                        <option value="donation">Donation</option>
+                      </select>
                     </div>
-                  </div>
 
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <div class="box-amount" data-amount="50">
-                      <span class="icon-currency">$</span>50
-                    </div>
-                  </div>
+                    <div class="form-group mb-4">
+                      <h2 class="fs-3 fw-bold">Donation Amount <span class="text-danger">*</span> </h2>
 
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <div class="box-amount" data-amount="75">
-                      <span class="icon-currency">$</span>75
-                    </div>
-                  </div>
+                      <div class="row">
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-3">
+                          <div class="box-amount box-amount-js active" data-amount="20">
+                            <span class="icon-currency">$</span>20
+                          </div>
+                        </div>
 
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <div class="box-amount" data-amount="100">
-                      <span class="icon-currency">$</span>100
-                    </div>
-                  </div>
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-3">
+                          <div class="box-amount box-amount-js" data-amount="25">
+                            <span class="icon-currency">$</span>25
+                          </div>
+                        </div>
 
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <div class="box-amount" data-amount="250">
-                      <span class="icon-currency">$</span>250
-                    </div>
-                  </div>
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-3">
+                          <div class="box-amount box-amount-js" data-amount="50">
+                            <span class="icon-currency">$</span>50
+                          </div>
+                        </div>
 
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <div class="box-amount" data-amount="500">
-                      <span class="icon-currency">$</span>500
-                    </div>
-                  </div>
-                </div>
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-3">
+                          <div class="box-amount box-amount-js" data-amount="75">
+                            <span class="icon-currency">$</span>75
+                          </div>
+                        </div>
 
-                <div class="amount-field">
-                  <label for="donation-amount" class="d-none">donation amount</label>
-                  <div class="amount-field-inner position-relative">
-                    <input type="text"
-                           class="form-control"
-                           aria-describedby="basic-addon1"
-                           value="20"
-                           id="donation-amount">
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-3">
+                          <div class="box-amount box-amount-js" data-amount="100">
+                            <span class="icon-currency">$</span>100
+                          </div>
+                        </div>
 
-                    <span class="icon-currency">$</span>
-                  </div>
-                </div>
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-3">
+                          <div class="box-amount box-amount-js" data-amount="250">
+                            <span class="icon-currency">$</span>250
+                          </div>
+                        </div>
 
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-3">
+                          <div class="box-amount box-amount-js" data-amount="500">
+                            <span class="icon-currency">$</span>500
+                          </div>
+                        </div>
+                      </div>
 
-              </div>
+                      <div class="amount-field">
+                        <div class="row">
+                          <div class="col-md-8">
+                            <label for="donation-amount" class="d-none">donation amount <span class="text-danger">*</span> </label>
+                            <div class="amount-field-inner position-relative">
+                              <input type="text"
+                                     class="form-control form-control-lg donation-amount-js"
+                                     aria-describedby="basic-addon1"
+                                     value="20"
+                                     id="donation-amount">
 
-              <div class="form-group mb-4">
-                <div class="recurring-wrapper">
-                  <div class="recurring-donation-checker">
-                    <input type="checkbox"
-                           id="recurring-check"
-                           class="checkbox-lg">
-                    <label for="recurring-check">Make this donation recurring?</label>
-                  </div>
-
-                  <div class="recurring-period d-none">
-                    <div class="row pt-3">
-                      <div class="col-sm-4">
-                        <div class="form-group">
-                          <label>Recurring by</label>
-                          <select class="form-control recurring-type">
-                            <option value="0">Select One</option>
-                            <option value="1">Daily</option>
-                            <option value="2">Weekly</option>
-                            <option value="3">Monthly</option>
-                          </select>
+                              <span class="icon-currency">$</span>
+                            </div>
+                          </div>
                         </div>
 
                       </div>
 
-                      <div class="col-sm-4">
-                        <div class="form-group recurring-duration">
-                          <label>Recurring Duration</label>
-                          <select class="form-control">
-                            <option>Select Duration</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
+
+                    </div>
+
+                    <div class="form-group mb-4">
+                      <div class="recurring-wrapper">
+                        <div class="recurring-donation-checker">
+                          <div class="checkbox-holder d-flex align-items-start">
+                            <div>
+                              <input type="checkbox"
+                                     id="recurring-check"
+                                     class="checkbox-lg">
+                            </div>
+
+                            <label for="recurring-check">Make this donation recurring?</label>
+                          </div>
                         </div>
 
+                        <div class="recurring-period d-none">
+                          <div class="row pt-3">
+                            <div class="col-sm-4">
+                              <div class="form-group">
+                                <label>Recurring by</label>
+                                <select class="form-control recurring-type">
+                                  <option value="0">Select One</option>
+                                  <option value="1">Daily</option>
+                                  <option value="2">Weekly</option>
+                                  <option value="3">Monthly</option>
+                                </select>
+                              </div>
+
+                            </div>
+
+                            <div class="col-sm-4">
+                              <div class="form-group recurring-duration">
+                                <label>Recurring Duration</label>
+                                <select class="form-control">
+                                  <option>Select Duration</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                </select>
+                              </div>
+
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-control-label"
+                             for="note">Note</label>
+                      <textarea class="form-control"
+                                id="note"></textarea>
+                    </div>
+                  </div>
+
+                  <!-- STEP FOOT -->
+                  <div class="step-foot px-3 px-md-5 py-2 py-md-3 border-top">
+                    <div class="button-holder text-end">
+                      <button type="button"
+                              class="btn btn-primary btn-lg btn-navigation btn-navigation-next btn-navigation-js fw-semibold ls-1 py-2 py-md-3 px-3 px-md-5"
+                              data-action="increase">
+                        <span>NEXT</span>
+                        <img src="assets/images/right_white.png"
+                             class="img-right"
+                             alt="next">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- YOUR INFORMATION - STEP 2 -->
+                <div class="step-box step-2"
+                     data-step="2">
+                  <!-- STEP HEAD -->
+                  <div class="step-head bg-dark-custom px-3 px-md-5 py-3 py-md-3">
+                    <div class="row">
+                      <div class="col-9">
+                        <h2 class="fs-3 fw-bold text-white text-uppercase m-0">Your Information</h2>
+                      </div>
+                      <div class="col-3"></div>
+                    </div>
+                  </div>
+
+                  <!-- STEP BODY -->
+                  <div class="step-body px-3 px-md-5 py-2 py-md-4">
+                    <div class="form-group mb-3">
+                      <label class="form-control-label mb-1"
+                             for="street-address">Street Address <span class="text-danger">*</span> </label>
+                      <input type="text"
+                             class="form-control"
+                             id="street-address"
+                             name="StreetAddress">
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group mb-4">
+                          <label class="form-control-label mb-1"
+                                 for="country">State <span class="text-danger">*</span></label>
+                          <input type="text"
+                                 class="form-control"
+                                 id="state"
+                                 name="State">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group mb-4">
+                          <label class="form-control-label mb-1"
+                                 for="city">City <span class="text-danger">*</span></label>
+                          <input type="text"
+                                 class="form-control"
+                                 id="city"
+                                 name="City">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group mb-4">
+                          <label class="form-control-label mb-1"
+                                 for="country">Country <span class="text-danger">*</span></label>
+                          <input type="text"
+                                 class="form-control"
+                                 id="country"
+                                 name="Country">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group mb-4">
+                          <label class="form-control-label mb-1"
+                                 for="zipcode">Zipcode <span class="text-danger">*</span></label>
+                          <input type="text"
+                                 class="form-control"
+                                 id="zipcode"
+                                 name="Zipcode">
+                        </div>
                       </div>
                     </div>
 
                   </div>
+
+                  <!-- STEP FOOT -->
+                  <div class="step-foot px-3 px-md-5 py-2 py-md-3 border-top">
+                    <div class="button-holder text-end">
+
+                      <button type="button"
+                              class="btn btn-dark btn-lg btn-navigation btn-navigation-prev btn-navigation-js fw-semibold ls-1 py-2 py-md-3 px-3 px-md-5 me-3"
+                              data-action="decrease">
+                        <img src="assets/images/left-white-24.png"
+                             class="img-left"
+                             alt="prev">
+                        <span>BACK</span>
+                      </button>
+
+                      <button type="button"
+                              class="btn btn-primary btn-lg btn-navigation btn-navigation-next btn-navigation-js fw-semibold ls-1 py-2 py-md-3 px-3 px-md-5"
+                              data-action="increase">
+                        <span>NEXT</span>
+                        <img src="assets/images/right_white.png"
+                             class="img-right"
+                             alt="next">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- PAYMENT INFORMATION - STEP 3 -->
+                <div class="step-box step-3"
+                     data-step="3">
+                  <!-- STEP HEAD -->
+                  <div class="step-head bg-dark-custom px-3 px-md-5 py-3 py-md-3">
+                    <div class="row">
+                      <div class="col-9">
+                        <h2 class="fs-3 fw-bold text-white text-uppercase m-0">Payment Details</h2>
+                        <!-- CARD ICONS -->
+                        <div class="card-holder d-flex align-items-center pt-2">
+                          <div class="card-single">
+                            <img src="assets/images/visa.png"
+                                 alt="visa">
+                          </div>
+
+                          <div class="card-single">
+                            <img src="assets/images/mastercard.png"
+                                 alt="mastercard">
+                          </div>
+
+                          <div class="card-single">
+                            <img src="assets/images/discover.png"
+                                 alt="discover">
+                          </div>
+
+                          <div class="card-single">
+                            <img src="assets/images/amex.png"
+                                 alt="amex">
+                          </div>
+
+                          <div class="card-single">
+                            <img src="assets/images/jcb.png"
+                                 alt="jcb">
+                          </div>
+
+                          <div class="card-single">
+                            <img src="assets/images/diner-club.png"
+                                 alt="diners-club">
+                          </div>
+
+                          <div class="card-single">
+                            <img src="assets/images/union-pay.png"
+                                 alt="union-pay">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3"></div>
+                    </div>
+                  </div>
+
+                  <!-- STEP BODY -->
+                  <div class="step-body px-3 px-md-5 py-2 py-md-4">
+                    <div class="form-group mb-3">
+                      <label class="form-control-label mb-1"
+                             for="card-number">Card Number<span class="text-danger">*</span> </label>
+                      <div class="card-number-holder position-relative">
+                        <input type="text"
+                               class="form-control"
+                               id="card-number"
+                               name="CardNumber">
+
+                        <div class="card-icon">
+                          <img src="assets/images/unknown.png" alt="unknown-card">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group mb-4">
+                          <label class="form-control-label mb-1"
+                                 for="expiry-month">Expiry Month</label>
+                          <select class="form-control form-select"
+                                  id="expiry-month"
+                                  name="ExpiryMonth">
+                            <option>Expiry Month...</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group mb-4">
+                          <label class="form-control-label mb-1"
+                                 for="expiry-month">Expiry Year</label>
+                          <select class="form-control form-select"
+                                  id="expiry-year"
+                                  name="expiry-year">
+                            <option>Expiry Year...</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                            <option value="2032">2032</option>
+                            <option value="2033">2033</option>
+                            <option value="2034">2034</option>
+                            <option value="2035">2035</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group mb-4">
+                          <label class="form-control-label mb-1"
+                                 for="cvc">CVC</label>
+                          <input type="text"
+                                 class="form-control"
+                                 id="cvc"
+                                 name="Cvc">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group mb-4">
+                          <label class="form-control-label mb-1"
+                                 for="zipcode-card">Zipcode</label>
+                          <input type="text"
+                                 class="form-control"
+                                 id="zipcode-card"
+                                 name="ZipcodeCard">
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <!-- STEP FOOT -->
+                  <div class="step-foot px-3 px-md-5 py-2 py-md-3 border-top">
+                    <div class="alert alert-primary">
+                      Please note that you will see a charge from <strong>"[company name]"</strong> on your credit card statement.
+                      [company name] is a tax exempt organization under section 501(c)(3) of Internal Revenue Code.<strong>Employer Idenfication Number 46-5035493.</strong>
+                    </div>
+
+                    <div class="alert alert-secondary">
+                      <div class="checkbox-holder d-flex align-items-start">
+                        <div>
+                          <input type="checkbox"
+                                 id="cover-fees"
+                                 class="checkbox-lg">
+                        </div>
+
+                        <label for="cover-fees"
+                               class="ps-2">I want to make an additional donation to cover online processing fees, so that my entire contribution goes to [company name]. ($5.50)</label>
+                      </div>
+                    </div>
+
+                    <div class="btn-holder text-center position-relative mt-5">
+                      <div class="row justify-content-center">
+                        <div class="col-md-8">
+                          <button type="button"
+                                  class="btn btn-success-custom btn-lg btn-submit-js fs-5 fw-semibold ls-1 py-3 text-uppercase px-5 w-100"
+                                  id="btn-submit">
+                            <img src="assets/images/verified-white-24.png" alt="verified">
+                            <span class="ps-2">Donate $<span class="amount amount-js">100</span> </span>
+                          </button>
+                        </div>
+
+                      </div>
+                      <p class="m-0 opacity-75 fs-6 mt-2">
+                        <img src="assets/images/security-32.png"
+                             style="max-height:20px"
+                             alt="secure payment">
+                        Secured by
+                        <img src="assets/images/sectigo-store-logo.png"
+                             style="max-height: 20px"
+                             alt="secured by sectigo">
+                      </p>
+
+                      <div class="pt-3 mt-3 border-top">
+                        <button type="button"
+                                class="btn btn-transparent btn-navigation btn-navigation-prev btn-navigation-js fw-semibold"
+                                data-action="decrease">
+                          <img src="assets/images/left.png"
+                               class="img-left"
+                               alt="prev">
+                          <span>BACK</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
               </div>
+
             </div>
 
-            <div class="form-wrapper-foot border-top pt-4 mt-5">
-              <div class="button-holder text-end">
-                <button type="button" class="btn btn-dark btn-lg py-3 px-5 me-4">PREV</button>
-                <button type="button" class="btn btn-primary btn-lg py-3 px-5">NEXT</button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <p class="text-md-center m-0">Please call us at <a href="tel:[company phone]">[company phone]</a> or email us to <a href="mailto:[company-email]" class="text-link">[company-email]</a> with any questions, comments, or concerns.</p>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="text-md-center m-0"><a href="[company url]" class="text-link" target="_blank">[company name].</a> All Rights Reserved.</p>
+      </div>
+
+    </div>
+  </footer>
 </div>
 
 

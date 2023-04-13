@@ -1,43 +1,36 @@
-@import "variable";
 .form{
-  &-wrapper{
-    .select2-selection__rendered {
-      line-height: $form-field-height;
-    }
-    .select2-container .select2-selection--single {
-      height: $form-field-height;
-      font-size: $font-size-input;
-      font-weight: 500;
-      box-shadow: $box-shadow-input;
-      border-color: $border-color-input;
-    }
-    .select2-selection__arrow {
-      height: $form-field-height;
-    }
-    .select2-container--default .select2-selection--single .select2-selection__rendered{
-      line-height: $form-field-height;
-      padding-left:1rem;
-      padding-right: 2rem;
-    }
-    .select2-container--default .select2-selection--single .select2-selection__arrow{
-      height: $form-field-height;
-      width:3.5rem;
-    }
-
-    .select2-container--default .select2-selection--single .select2-selection__arrow b{
-      border-width:7px 6px 0 6px;
-    }
-  }
-
   &-control{
     box-shadow: $box-shadow-input;
     border-color:$border-color-input;
     height:$form-field-height;
     font-size: $font-size-input;
     font-weight: 500;
+
+    &.form-control-lg{
+      height: $form-field-height-lg;
+    }
+
+    &-label{
+      font-size:1.25rem;
+      font-weight: 600;
+    }
+
+    &:focus{
+      color: #212529;
+      background-color: #fff;
+      border:0;
+      outline: 2px solid #000;
+      box-shadow: inset 0 0.08em 0.4em rgba(0, 0, 0, 0.15);
+    }
   }
   &-select{
 
+  }
+}
+
+textarea{
+  &.form-control{
+    height: 6rem;
   }
 }
 
@@ -48,16 +41,17 @@
 }
 .box{
   &-amount{
-    padding: .7rem 1rem;
-    font-size: 1.8rem;
+    padding: 0.5rem 0.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    margin-bottom: 1.3rem;
+    margin-bottom: 0.8rem;
     text-align: center;
     cursor: pointer;
     //border:1px solid #009688;
     color:#009688;
     border: 1px solid #c5d9d7;
     border-radius: 0.6rem;
+
     &:hover{
       background-color: #d5fcf7;
       color: #009688;
@@ -78,6 +72,12 @@
         top: -8px;
         padding-right: 4px;
       }
+    }
+
+    @media (min-width: 768px) {
+      padding: .7rem 1rem;
+      font-size: 1.8rem;
+      margin-bottom: 1.3rem;
     }
   }
 }
@@ -111,12 +111,33 @@
         box-shadow: inset 0 0.08em 0.4em rgba(0, 0, 0, 0.15);
         border-color: #ddd;
       }
-      label{
-        font-size: 1.4rem;
-        font-weight: 600;
-        padding-left:.5rem;
+      .checkbox-holder{
+        label{
+          font-size: 1.4rem;
+          font-weight: 600;
+          padding-left:.5rem;
+          line-height: 1.5rem;
+        }
       }
 
+    }
+  }
+}
+
+.checkbox{
+  &-lg{
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  &-holder{
+    input[type=checkbox]{
+      //float: left;
+    }
+    label{
+      line-height: 1.6;
+      position: relative;
+      top: -2px;
     }
   }
 }

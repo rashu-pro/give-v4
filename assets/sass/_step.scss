@@ -1,0 +1,12 @@
+.step{
+  &-box{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+
+  &-body{
+    padding:0 0 30px 0;
+  }
+}
