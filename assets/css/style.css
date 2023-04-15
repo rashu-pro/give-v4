@@ -269,6 +269,24 @@ textarea.form-control {
 .step-body {
   padding: 0 0 30px 0;
 }
+.step-list-wrapper {
+  display: flex;
+}
+.step-list-wrapper .step-list-single:not(:last-child) {
+  padding-right: 8px;
+}
+.step-list-wrapper .step-list-single.active .step-mark {
+  background-color: #fff;
+  border-color: #fff;
+  opacity: 0.8;
+}
+.step-mark {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  opacity: 0.6;
+}
 
 .footer {
   background-color: #161111;

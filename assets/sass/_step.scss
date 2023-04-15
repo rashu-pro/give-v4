@@ -9,4 +9,43 @@
   &-body{
     padding:0 0 30px 0;
   }
+
+  &-indicator{
+
+  }
+
+  &-list{
+    &-wrapper{
+      display: flex;
+      .step{
+        &-list{
+          &-single{
+            &:not(:last-child){
+              padding-right:8px;
+            }
+
+            &.active{
+              .step{
+                &-mark{
+                  background-color: #fff;
+                  border-color:#fff;
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+
+  &-mark{
+    width:15px;
+    height:15px;
+    border:2px solid #ddd;
+    border-radius: 50%;
+    opacity: 0.6;
+  }
 }
