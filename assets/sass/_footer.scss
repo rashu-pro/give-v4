@@ -3,19 +3,21 @@
   //background-color: #190d23;
   background-color: #161111;
   &-top{
-    background-color: #d3d3d3;
+    //background-color: #d3d3d3;
+    background-color: #fff;
     padding: 12px 0;
     font-size: 15px;
     font-weight: 500;
     *{
       //opacity: 0.9;
     }
-    @media (min-width: 768px){
+    @media (min-width: 992px){
       font-size: 18px;
       padding:30px 0;
       font-weight: 600;
     }
   }
+
   &-bottom{
     padding:15px 0;
     color:#fff;
@@ -29,4 +31,23 @@
       }
     }
   }
+
+  .credit-wrapper{
+    .logo-holder {
+      border-top:1px solid #e3e3e3;
+      img{
+        max-height: 10rem;
+        max-width: 10rem;
+      }
+    }
+    @media (min-width: 576px) {
+      .logo-holder {
+        border-top: 0;
+        img{
+
+        }
+      }
+    }
+  }
+
 }

@@ -1,7 +1,12 @@
 body, html {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  body, html {
+    font-size: 16px;
+  }
 }
 
 .bg-grey {
@@ -30,10 +35,23 @@ body, html {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   padding: 10px 0;
 }
+.header.bg-transparent {
+  background-color: transparent;
+  box-shadow: none;
+}
+.header.bg-transparent .logo-holder img {
+  max-height: 10rem;
+  max-width: 15rem;
+}
 
 .logo-holder img {
   max-height: 5rem;
   max-width: 10rem;
+}
+@media (min-width: 768px) {
+  .logo-holder img {
+    max-width: 15rem;
+  }
 }
 
 .btn-success-custom {
@@ -260,6 +278,23 @@ textarea.form-control {
   max-height: 2.2rem;
 }
 
+.email-note-text {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+}
+
+.divider {
+  width: 15%;
+  height: 0.4rem;
+  background-color: #000;
+  border-radius: 0.6rem;
+  margin: 0 auto;
+}
+
 .step-box {
   display: none;
 }
@@ -292,12 +327,12 @@ textarea.form-control {
   background-color: #161111;
 }
 .footer-top {
-  background-color: #d3d3d3;
+  background-color: #fff;
   padding: 12px 0;
   font-size: 15px;
   font-weight: 500;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .footer-top {
     font-size: 18px;
     padding: 30px 0;
@@ -314,6 +349,18 @@ textarea.form-control {
 }
 .footer-bottom a.text-link:hover {
   color: #828dda;
+}
+.footer .credit-wrapper .logo-holder {
+  border-top: 1px solid #e3e3e3;
+}
+.footer .credit-wrapper .logo-holder img {
+  max-height: 10rem;
+  max-width: 10rem;
+}
+@media (min-width: 576px) {
+  .footer .credit-wrapper .logo-holder {
+    border-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

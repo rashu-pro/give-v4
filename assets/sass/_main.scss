@@ -25,3 +25,19 @@
     }
   }
 }
+
+.email-note-text{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+}
+.divider{
+  width:15%;
+  height:.4rem;
+  background-color: #000;
+  border-radius: .6rem;
+  margin: 0 auto;
+}

@@ -19,3 +19,10 @@ $(document).on('click', '.box-amount-js', function (e){
   self.addClass('active');
   $('.donation-amount-js').val(self.attr('data-amount'));
 })
+
+$(document).on('click', '.btn-submit-js', function (e){
+  e.preventDefault();
+  let self = $(this);
+  self.closest('.step-box').removeClass('active');
+  self.closest('.step-box').next().addClass('active');
+})
